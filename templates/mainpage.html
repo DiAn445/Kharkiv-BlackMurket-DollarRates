@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html' %}
+
+{% block title %}Kharkiv Dollar Rates{% endblock %}
+
+{% block content %}
+<div class="container">
+        <center>
+        <h1>{{ title }}</h1>
+        <table class="table table-dark table-hover">
+          <thead>
+            <tr>
+              <th>Last rates</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for item in data %}
+            <tr>
+              <td>{{ item }}</td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+    <img src="data:image/png;base64,{{ image_data }}" /></center>
+</div>
+{% endblock %}
+
+
+
+
+
+
+</body>
+</html>
